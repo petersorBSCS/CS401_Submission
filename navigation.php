@@ -2,6 +2,10 @@
 
     if(!isset($_SESSION)) {session_start();}
 
+if(!isset($_SESSION["validLogin"])){
+    include("invalidSessionWarning.php");
+} else {
+
     function page($pageRef, $pageName){
 
         $this_page = $_SESSION["this_page"];
@@ -34,4 +38,4 @@ if ($_SESSION["this_page"]!="Home") {
     <hr>
 </div>
 
-<?php } ?>
+<?php }} ?>

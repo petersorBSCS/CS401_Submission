@@ -4,6 +4,10 @@ require_once("php/Dao.php");
 
 $dao = new Dao();
 
+if(!isset($_SESSION["validLogin"]) || ($_SESSION["usertype"]!="grower")){
+    include("invalidSessionWarning.php");
+} else {
+
 ?>
 <div class="growerOptions">
 
@@ -39,3 +43,5 @@ $dao = new Dao();
             </span>
     </div>
 </div>
+
+<?php } ?>

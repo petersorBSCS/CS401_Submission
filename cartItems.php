@@ -8,6 +8,10 @@ $userID = $_SESSION["userID"];
 $orderID = $_SESSION["orderID"];
 require_once ("php/Dao.php");
 
+if(!isset($_SESSION["validLogin"]) || ($_SESSION["usertype"]!="shopper")){
+    include("invalidSessionWarning.php");
+} else {
+
 $dao = new Dao();
 
 $resp = $dao->fetchOrder($orderID);
@@ -183,3 +187,4 @@ $resp = $dao->fetchOrder($orderID);
             </span>
     </div>
 </div>
+<?php } ?>

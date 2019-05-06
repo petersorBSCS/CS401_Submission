@@ -8,6 +8,10 @@ $userID = $_SESSION["userID"];
 $userName = $_SESSION["username"];
 require_once ("php/Dao.php");
 
+if(!isset($_SESSION["validLogin"]) || ($_SESSION["usertype"]!="shopper")){
+    include("invalidSessionWarning.php");
+} else {
+
 $dao = new Dao();
 
 $resp = $dao->fetchShopperOrders($userID);
@@ -69,7 +73,8 @@ $resp = $dao->fetchShopperOrders($userID);
             echo "<table>";
             echo "<tr>";
             echo "<td><strong>Grower: </strong></td>";
-            echo "<a><a href=\"#\" id=\"growerID_".$order_item["growerID"]."\"/>".$order_item["growerName"]."</a></td>";
+            echo "<td><a href=\"viewGrower.php?growerName=".$order_item["growerName"];
+            echo "\" id=\"growerID_".$order_item["growerID"]."\"/>".$order_item["growerName"]."</a></td>";
             echo "</tr>";
             echo "<tr>";
             echo "<td><strong>Harvest Date: </strong></td>";
@@ -230,6 +235,6 @@ $resp = $dao->fetchShopperOrders($userID);
             </span>
     </div>
 </div>
-
+<?php } ?>
 
 

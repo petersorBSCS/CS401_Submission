@@ -1162,7 +1162,6 @@ function showCancelOrderConfirm(){
             });
 
 
-
     });
 
     $("#cancelCancelOrderButton").click(function(){
