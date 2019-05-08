@@ -283,10 +283,10 @@ ul {
 }
 
 .homeScrollerImg span {
-    vertical-align: middle;
+    /*vertical-align: middle;
     display: table;
     position: relative;
-    bottom: 150px;
+    bottom: 150px;*/
 }
 
 .homeScrollerText {

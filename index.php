@@ -28,10 +28,10 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>My Neighbors Crop</title>
+    <title>My Neighbor's Garden</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="styles.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/png" href="icons/leaf.png">
+    <link rel="shortcut icon" type="image/x-icon" href="leaf.ico">
 <!--
     <script src="scripts/jquery-3.3.1.min.js"/>
     <script src="scripts/jquery-ui.js"/>
