@@ -170,4 +170,4 @@ if(!isset($_SESSION["validLogin"]) || ($_SESSION["usertype"]=="grower")){
     </body>
     </html>
 
-<?php }?>
+<?php } ?>

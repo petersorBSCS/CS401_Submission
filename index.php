@@ -60,21 +60,27 @@
         </div>
 
             <div class=homeScrollerImg id="backyardGarden">
-                <p class=homeScrollerText>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
+                <span>
+                        <p class=homeScrollerText>
+                             My Neighbor's Garden is about sharing your bounty with the people around you.
+                         </p>
+                </span>
             </div>
 
             <div class=homeScrollerImg id="FarmersMarket">
-                <p class=homeScrollerText>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
+                <span>
+                    <p class=homeScrollerText>
+                        The home gardener can list their produce here, and sell it.  Think farmer's market.
+                    </p>
+                </span>
             </div>
 
             <div class=homeScrollerImg id="beekeeper">
-                <p class=homeScrollerText>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
+                <span>
+                    <p class=homeScrollerText>
+                        Who knows, you might even turn a profit!
+                    </p>
+                </span>
             </div>
 
     <!-- Register DIV -->

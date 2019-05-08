@@ -22,7 +22,7 @@ class Banner
             $rtn .= "</div>";
         } else {
             // Display the user's profile picture instead of the buttons
-            $rtn .= "<div class='user-banner-group'>";
+            $rtn .= "<div class='user-banner-group'><span>";
             $rtn .= "<div class='userGroup'>".$_SESSION["username"]."</div>";
 #            $rtn .= "<i class=\"dropdown icon\"></i>";
 #            $rtn .= "<div class=\"menu\">";
@@ -37,12 +37,12 @@ class Banner
                     $numCartItems = 0;
                 }
 
-                $rtn .= "&nbsp<a href='viewCart.php' id='numCartItems'>$numCartItems</a>";
+                $rtn .= "&nbsp<a href='viewCart.php' id='numCartItems'>Cart[$numCartItems]</a>";
                 $rtn .= "&nbsp<a href='viewOrders.php' id='viewOrdersLink'>Orders</a>";
             }
 #            $rtn .= "</div>";
 
-            $rtn .= "</div>";
+            $rtn .= "</span></div>";
 //                $rtn .="<a class=\"sprite pointer\" href=\"userHome.php\"></a>";
 
  #           $rtn .= "<div>";

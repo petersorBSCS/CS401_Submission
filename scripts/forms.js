@@ -198,7 +198,7 @@ $(document).ready(function() {
                 success: function(resp) {
                     // Update the number of items in the cart
                     // in the banner
-                    $("a#numCartItems").html(resp);
+                    $("a#numCartItems").html("Cart["+resp+"]");
                     $("#addToCart").fadeOut(200);
                 }
             })
@@ -1659,8 +1659,7 @@ function showRemoveOrderItem() {
     });
 
     // Bind the click events
-    //$("#confirmRemoveOrderItemButton").on('click',removeOrderItem);
-    $confirmRemoveItemButton.on('click',removeOrderItem);
+    $("button[id^=confirmRemoveOrderItem_]").on('click',removeOrderItem);
 
     // Show the modal
     $("#confirmRemoveOrderItem").fadeIn(300);
@@ -1677,7 +1676,7 @@ function removeOrderItem(){
     var value = { "order_itemID" : orderItemID };
 
     // Reset the confirm button's ID
-    $(this).attr('id', 'confirmRemoveOrderItem');
+//    $(this).attr('id', 'confirmRemoveOrderItem'); // Why was I doing this??
 
     $.ajax({
         type: "POST",
@@ -1687,7 +1686,7 @@ function removeOrderItem(){
 
 
 
-            $("#numCartItems").html(resp);
+            $("#numCartItems").html("Cart["+resp+"]");
 
             // Form a get request to update the shopping cart view
             value = {};
@@ -1819,6 +1818,7 @@ function showProductDetails(event){
                             // Prompt the user with a more complete form
                             // for them to complete their profile
                             // FIXME
+                            console.log(resp);
                         } else {
                             $("#placeOrderFieldSet").fadeIn(300);
                             $("button#placeOrder").html("Add to Cart");
@@ -1902,7 +1902,7 @@ function submitOrderItem(){
         success: function(resp) {
             // Update the number of items in the cart
             // in the banner
-            $("a#numCartItems").html(resp);
+            $("a#numCartItems").html("Cart["+resp+"]");
         }
     })
         .done(function(){

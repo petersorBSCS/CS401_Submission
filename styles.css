@@ -211,15 +211,16 @@ body {
     clear : left;
     float : right;
     margin-right:0px;
-    height: 100%;
+    height: max-content;
     text-align: center;
     position: absolute;
     bottom: 1px;
     right: 1px;
     font-family: "HP Simplified";
     font-size: 16pt;
-    background-color:lightgreen;
-    width:20%;
+    /*background-color:lightgreen;*/
+    vertical-align : bottom;
+    width:max-content;
     /*background-image: linear-gradient(to left, rgba(0,0,0,1), rgba(255,255,255,0));*/
 }
 
@@ -275,19 +276,33 @@ ul {
     background-color:#046756 ;
     background-blend-mode: screen;
     height: 500px;
+    text-align: center;
+    color: white;
+    font-size: 30pt;
+    vertical-align: middle;
+}
+
+.homeScrollerImg span {
+    vertical-align: middle;
+    display: table;
+    position: relative;
+    bottom: 150px;
 }
 
 .homeScrollerText {
     display: table-cell;
     position:relative;
     bottom:0px;
-    color: black;
-    vertical-align: bottom;
-    font-size: 15pt;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: 2px 2px 5px blue;
+    font-size: 35pt;
     font-weight:bold;
     padding-left:10%;
     padding-right: 10%;
     padding-top:20%;
+    text-decoration: #007fff;
 }
 
 .footer {
@@ -415,6 +430,10 @@ div#numProdInSearch p{
 #itemsList ul {
     list-style: none;
     padding-left: 2px;
+    text-align: left;
+}
+
+#itemsList li {
     text-align: left;
 }
 
